@@ -8,6 +8,10 @@ const student = {
         this.courses.push(newCourse);
         console.log(`${newCourse} has been added to your courses.`);
     },
+    // Method for calculating and returning total number of courses...
+    getTotalCourses: function() {
+        return this.courses.length;
+      },
 
     displayInfo: function() {
       console.log(`Name: ${this.name}, Age: ${this.age}, Enrolled: ${this.enrolled}, Courses: ${this.courses.join(", ")}`);
@@ -56,3 +60,7 @@ clonedStudent.displayInfo();
 const newCourses = ["Databases", "Technical Reading and Writing", "Web Development"];
 const allCourses = [...student.courses, ...newCourses];
 console.log(allCourses);
+
+// Calling the TotalCourses method...
+const totalCourses = student.getTotalCourses();
+console.log("Total number of courses:", totalCourses);
