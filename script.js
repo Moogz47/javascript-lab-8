@@ -22,3 +22,15 @@ console.log(studentJSON);
 const parsedStudent = JSON.parse(studentJSON);
 console.log(parsedStudent);
 // New object is more organized in the terminal than original...
+
+// Destructing assignment...
+const {name, courses} = student;
+console.log(name);
+console.log(courses.join(", "));
+
+// Scores array...
+const scores = [85, 92, 78, 98, 70, 89];
+const [firstScore, secondScore] = scores;
+console.log("First Score:", firstScore);
+console.log("Second Score:", secondScore);
+
