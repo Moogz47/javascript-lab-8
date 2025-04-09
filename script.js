@@ -3,7 +3,12 @@ const student = {
     age: 28,
     enrolled: true,
     courses: ["Algorithms", "JavaScript", "Operating Systems"],
-    
+    // Method for dynamically adding a new course...
+    addCourse: function(newCourse) {
+        this.courses.push(newCourse);
+        console.log(`${newCourse} has been added to your courses.`);
+    },
+
     displayInfo: function() {
       console.log(`Name: ${this.name}, Age: ${this.age}, Enrolled: ${this.enrolled}, Courses: ${this.courses.join(", ")}`);
     }
@@ -13,6 +18,9 @@ console.log("Name:", student.name);
 console.log("Age:", student.age);
 
 student.displayInfo();
+
+// Adding the new course...
+student.addCourse("Music");
 
 // Converting student object to JSON string...
 const studentJSON = JSON.stringify(student);
