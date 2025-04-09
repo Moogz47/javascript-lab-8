@@ -34,3 +34,12 @@ const [firstScore, secondScore] = scores;
 console.log("First Score:", firstScore);
 console.log("Second Score:", secondScore);
 
+// Using the spread operator...
+const clonedStudent = { ...student };
+clonedStudent.graduationYear = 2027;
+
+console.log("Original Student:", student);
+console.log("Cloned Student:", clonedStudent);
+console.log("Graduation Year of Cloned Student:", clonedStudent.graduationYear);
+
+clonedStudent.displayInfo();
