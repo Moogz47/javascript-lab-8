@@ -43,3 +43,8 @@ console.log("Cloned Student:", clonedStudent);
 console.log("Graduation Year of Cloned Student:", clonedStudent.graduationYear);
 
 clonedStudent.displayInfo();
+
+// Merging new array...
+const newCourses = ["Databases", "Technical Reading and Writing", "Web Development"];
+const allCourses = [...student.courses, ...newCourses];
+console.log(allCourses);
