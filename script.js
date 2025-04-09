@@ -46,6 +46,12 @@ const [firstScore, secondScore] = scores;
 console.log("First Score:", firstScore);
 console.log("Second Score:", secondScore);
 
+// Reduce method for average score...
+const totalScore = scores.reduce((accumulator, currentScore) => accumulator + currentScore, 0);
+const averageScore = totalScore / scores.length;
+console.log("Total Score:", totalScore);
+console.log("Average Score:", averageScore.toFixed(2));
+
 // Using the spread operator...
 const clonedStudent = { ...student };
 clonedStudent.graduationYear = 2027;
